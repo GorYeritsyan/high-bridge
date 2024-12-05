@@ -5,9 +5,9 @@ import Container from "../components/Container.jsx";
 
 const LoginPage = () => {
     return (
-        <div className="login-background">
+        <div className="login-background overflow-hidden">
            <Container>
-               <div className='flex justify-center items-center h-screen'>
+               <div className='flex justify-center items-center space-x-16 h-screen'>
                    <LoginInfo />
                    <Login />
                </div>

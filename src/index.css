@@ -29,6 +29,10 @@
         @apply text-xs
     }
 
+    body{
+        @apply font-[zenkaku]
+    }
+
     @font-face {
         font-family: 'zenkaku';
         src: url('./assets/fonts/ZenKakuGothicAntique-Regular.ttf') format('truetype');
