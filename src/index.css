@@ -1,3 +1,43 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    *{
+        @apply box-border p-0 m-0;
+    }
+
+    h1{
+        @apply text-2xl;
+    }
+
+    h2{
+        @apply text-xl;
+    }
+    h3{
+        @apply text-lg
+    }
+
+    h4{
+        @apply text-base;
+    }
+    h5{
+        @apply text-sm;
+    }
+
+    h6{
+        @apply text-xs
+    }
+
+    @font-face {
+        font-family: 'zenkaku';
+        src: url('./assets/fonts/ZenKakuGothicAntique-Regular.ttf') format('truetype');
+    }
+
+}
+
+@layer components {
+    .login-background {
+        @apply relative z-0 bg-login-background-image bg-cover bg-center after:bg-[rgba(33,33,33,0.5)] after:content-[''] after:-z-10 after:w-full after:h-full after:absolute after:top-0;
+    }
+}

@@ -6,6 +6,12 @@ export default {
   ],
   theme: {
     extend: {},
+    screens: {
+      'custom': '1440px'
+    },
+    backgroundImage: {
+      'login-background-image': "url('/src/assets/images/login-background.png')"
+    }
   },
   plugins: [],
 }
