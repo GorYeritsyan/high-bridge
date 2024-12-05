@@ -1,6 +1,10 @@
+import LoginPage from "./pages/LoginPage.jsx";
+
 const App = () => {
     return (
-        <div className='underline'>App</div>
+        <main>
+            <LoginPage />
+        </main>
     )
 }
 export default App
