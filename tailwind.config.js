@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      content: {
+        'checkbox': 'url("/src/assets/images/checkbox-icon.png")'
+      },
+    },
     screens: {
       'custom': '1440px'
     },
