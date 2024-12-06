@@ -5,6 +5,8 @@ import LoginButton from "./LoginButton";
 import { Field, Form, Formik } from "formik";
 
 const LoginForm = () => {
+  // used Formik library for form handling and can be added validation too
+  // all inputs are controlled
   return (
     <Formik
       initialValues={{
@@ -14,19 +16,31 @@ const LoginForm = () => {
       }}
       onSubmit={(values) => console.log(values)}
     >
-      <Form className="flex flex-col space-y-4 h-64">
+      <Form className="flex flex-col space-y-5 h-64">
         <Field name="email">
           {({ field, form }) => (
-            <Input label="Email" value={form.values.email} {...field} />
+            <Input
+              type="email"
+              label="Email"
+              value={form.values.email}
+              {...field}
+            />
           )}
         </Field>
 
         <Field name="password">
           {({ field, form }) => (
-            <Input label="Password" value={form.values.password} {...field} />
+            <Input
+              type="password"
+              label="Password"
+              value={form.values.password}
+              {...field}
+            />
           )}
         </Field>
-        <Field name="isChecked">{({ field}) => <Checkbox field={field} />}</Field>
+        <Field name="isChecked">
+          {({ field }) => <Checkbox field={field} />}
+        </Field>
 
         <LoginButton>continue</LoginButton>
       </Form>

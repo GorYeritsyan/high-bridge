@@ -1,12 +1,12 @@
 import React from "react";
 
-const Checkbox = ({field}) => {
+const Checkbox = ({ field }) => {
   return (
     <div className="flex justify-between items-center">
       <div className="flex justify-center items-center space-x-[5px]">
         <label className="text-xs font-medium flex justify-center items-center space-x-[5px]">
           <input
-          {...field}
+            {...field}
             className="cursor-pointer hover:bg-[rgb(215,215,215)] checked:bg-[rgb(215,215,215)] checked:hover:bg-[rgb(210,210,210)] bg-[rgb(224,224,224)] appearance-none w-[22px] h-[22px] rounded-sm border-none text-white
           checked:after:content-checkbox flex items-center justify-center"
             type="checkbox"
