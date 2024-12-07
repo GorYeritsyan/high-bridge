@@ -42,7 +42,7 @@
 
 @layer components {
     .login-background {
-        @apply relative z-0 bg-login-background-image bg-cover bg-center after:bg-[rgba(33,33,33,0.5)] after:content-[''] after:-z-10 after:w-full after:h-full after:absolute after:top-0;
+        @apply relative z-0 bg-[url('/src/assets/images/bg-img.svg')] bg-cover bg-center;
     }
 
     .floating-label{

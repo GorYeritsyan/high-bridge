@@ -4,15 +4,11 @@ export default {
   theme: {
     extend: {
       content: {
-        checkbox: 'url("/src/assets/images/checkbox-icon.png")',
+        checkbox: 'url("/src/assets/images/checkbox-icon.svg")',
       },
     },
     screens: {
       custom: "1440px",
-    },
-    backgroundImage: {
-      "login-background-image":
-        "url('/src/assets/images/login-background.png')",
     },
   },
   plugins: [],

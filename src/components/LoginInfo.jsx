@@ -7,7 +7,7 @@ const LoginInfo = () => {
 
       {/* logo */}
       <img
-        src="/src/assets/images/logo_highbridge.png"
+        src="/src/assets/images/logo_highbridge.svg"
         alt="logo highbridge"
         width={274}
       />
