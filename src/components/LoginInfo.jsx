@@ -3,8 +3,7 @@ import Slide from "./Slide.jsx";
 
 const LoginInfo = () => {
   return (
-    <div className="flex flex-col justify-between h-[380px]">
-
+    <div className="flex flex-col justify-between pt-16 h-[510px]">
       {/* logo */}
       <img
         src="/src/assets/images/logo_highbridge.svg"
