@@ -38,9 +38,19 @@
     src: url("./assets/fonts/ZenKakuGothicAntique-Regular.ttf")
       format("truetype");
   }
+
+  @font-face {
+    font-family: "inter";
+    src: url("./assets/fonts/Inter.ttf") format("truetype");
+  }
 }
 
 @layer components {
+  /* for more complex use */
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
   .login-background {
     @apply relative z-0 bg-[url('/src/assets/images/bg-img.svg')] bg-cover bg-center;
   }
@@ -52,5 +62,14 @@
   /*active state controller*/
   .custom-dots li.slick-active div {
     @apply bg-white w-12 h-[5px];
+  }
+
+  /* for not reusing same style for header items*/
+  .header-items {
+    @apply rounded-full bg-gray flex-center h-[50px];
+  }
+
+  .active-nav-item {
+    @apply text-primary-light after:content-[''] relative after:absolute after:left-0 after:bg-primary-light after:w-[6px] after:h-full after:rounded-tr-[10px] after:rounded-br-[10px] after:top-1/2 after:-translate-y-1/2
   }
 }
