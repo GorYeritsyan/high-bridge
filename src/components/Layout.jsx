@@ -4,12 +4,14 @@ import Sidebar from "./Sidebar.jsx";
 
 const Layout = () => {
   return (
-    <main className="font-[inter] flex h-screen">
+    <main className="font-[inter] w-full grid grid-cols-[250px_1fr] grid-rows-1">
       <Sidebar />
 
-      <section className="bg-gray flex-1 h-full">
+      <section className="bg-gray h-full">
         <Header />
-        <Outlet />
+        <div className="px-[50px] py-6">
+          <Outlet />
+        </div>
       </section>
     </main>
   );

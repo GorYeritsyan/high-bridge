@@ -43,6 +43,10 @@
     font-family: "inter";
     src: url("./assets/fonts/Inter.ttf") format("truetype");
   }
+
+  body {
+    @apply bg-gray;
+  }
 }
 
 @layer components {
@@ -70,6 +74,6 @@
   }
 
   .active-nav-item {
-    @apply text-primary-light after:content-[''] relative after:absolute after:left-0 after:bg-primary-light after:w-[6px] after:h-full after:rounded-tr-[10px] after:rounded-br-[10px] after:top-1/2 after:-translate-y-1/2
+    @apply text-primary-light after:content-[''] relative after:absolute after:left-0 after:bg-primary-light after:w-[6px] after:h-full after:rounded-tr-[10px] after:rounded-br-[10px] after:top-1/2 after:-translate-y-1/2;
   }
 }
