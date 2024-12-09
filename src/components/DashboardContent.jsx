@@ -7,7 +7,7 @@ const DashboardContent = ({ title, grow, content }) => {
       <h2 className="text-[22px] text-[rgb(52,60,106)] font-semibold">
         {title}
       </h2>
-      <div className={`flex w-full rounded-custom h-full  p-[25px] bg-white`}>
+      <div className={`flex w-full rounded-custom h-full  bg-white`}>
         {content}
       </div>
     </div>

@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import DashboardContent from "../components/DashboardContent.jsx";
 import TotalInfo from "../components/TotalInfo.jsx";
 import { imageBaseUrl } from "../components/Sidebar.jsx";
+import DashboardTable from "@/components/DashboardTable.jsx";
 
 const Dashboard = () => {
   const isAuthenticated = true;
@@ -27,11 +28,11 @@ const Dashboard = () => {
       <div className=" grid grid-cols-[2fr_1fr] grid-rows-[282px_367px] gap-x-[25px] gap-y-6">
         <DashboardContent
           title="Most selling products"
-          content={<h1>hello</h1>}
+          content={<DashboardTable />}
         />
-        <DashboardContent title="Recent Orders" content={<h1>hello</h1>} />
-        <DashboardContent title="Weekly Activity" content={<h1>hello</h1>} />
-        <DashboardContent title="Expense Statistics" content={<h1>hello</h1>} />
+        <DashboardContent title="Recent Orders" content={<h1>Lorem ipsum dolor.</h1>} />
+        <DashboardContent title="Weekly Activity" content={<h1>Lorem ipsum dolor.</h1>} />
+        <DashboardContent title="Expense Statistics" content={<h1>Lorem ipsum dolor.</h1>} />
       </div>
       <div className="flex items-center justify-between space-x-[30px] mt-[69px] h-[120px] *:h-full *:bg-white *:rounded-custom *:py-[25px] *:pl-[41px] *:pr-[25px]  *:w-full">
         <TotalInfo
