@@ -53,10 +53,7 @@ const Sidebar = () => {
   ];
 
   return (
-    <nav
-      className="w-[250px] h-full sticky top-0 bg-white
-         border-r border-r-border"
-    >
+    <nav className="w-[250px] h-full sticky top-0 bg-white border-r border-r-border">
       {/*sidebar logo*/}
       <div className="px-[38px] py-[31px]">
         <img
@@ -66,10 +63,7 @@ const Sidebar = () => {
       </div>
 
       {/*sidebar navigation lists*/}
-      <ul
-        className="flex flex-col text-lg font-medium
-           "
-      >
+      <ul className="flex flex-col text-lg font-medium space-y-2">
         {navigationList.map((elem) => (
           <NavLink
             to={elem.path}

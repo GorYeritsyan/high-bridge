@@ -3,7 +3,7 @@ import { cn } from "../lib/utils.js";
 
 const DashboardContent = ({ title, grow, content }) => {
   return (
-    <div className={cn("flex flex-col space-y-4")}>
+    <div className='flex flex-col space-y-4 '>
       <h2 className="text-[22px] text-[rgb(52,60,106)] font-semibold">
         {title}
       </h2>
