@@ -16,7 +16,7 @@ const RecentOrder = ({ title, image, orderDate, orderAmount }) => {
           </p>
         </div>
       </div>
-        {/*order amount logic -  */}
+      {/*order amount logic -  */}
       <div
         className={cn(
           "text-base font-medium",

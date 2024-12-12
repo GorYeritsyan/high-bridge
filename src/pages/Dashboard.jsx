@@ -24,14 +24,8 @@ const Dashboard = () => {
           content={<DashboardTable />}
         />
         <DashboardContent title="Recent Orders" content={<RecentOrders />} />
-        <DashboardContent
-          title="Weekly Activity"
-          content={<Activity />}
-        />
-        <DashboardContent
-          title="Expense Statistics"
-          content={<Statistics />}
-        />
+        <DashboardContent title="Weekly Activity" content={<Activity />} />
+        <DashboardContent title="Expense Statistics" content={<Statistics />} />
       </div>
       <div className="flex items-center justify-between space-x-[30px] mt-[69px] h-[120px] *:h-full *:bg-white *:rounded-custom *:py-[25px] *:pl-[41px] *:pr-[25px]  *:w-full">
         <TotalInfo
