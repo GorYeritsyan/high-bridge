@@ -1,4 +1,3 @@
-import React from 'react'
 import {Cell, Pie, PieChart} from "recharts";
 
 
@@ -16,11 +15,7 @@ const Statistics = () => {
         <div className='flex-center w-full'>
          <PieChart width={300} height={300} >
            <Pie data={data} dataKey="value" nameKey="name" outerRadius={135} startAngle={40} endAngle={400}
-           >
-             {data.map((entry, index) => (
-                 <Cell key={`cell-${index}`} fill={entry.fill || '#8884d8'} />
-             ))}
-           </Pie>
+          />
          </PieChart>
 
         </div>
