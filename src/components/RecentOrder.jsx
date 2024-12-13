@@ -1,6 +1,7 @@
 import React from "react";
 import { imageBaseUrl } from "@/components/Sidebar.jsx";
 import { cn } from "@/lib/utils.js";
+import Amount from "@/components/Amount.jsx";
 
 const RecentOrder = ({ title, image, orderDate, orderAmount }) => {
   return (
@@ -16,19 +17,7 @@ const RecentOrder = ({ title, image, orderDate, orderAmount }) => {
           </p>
         </div>
       </div>
-      {/*order amount logic -  */}
-      <div
-        className={cn(
-          "text-base font-medium",
-          orderAmount.toString().at(0) === "-"
-            ? "text-[rgba(255,75,74)]"
-            : "text-[rgb(65,212,168)]",
-        )}
-      >
-        {orderAmount.toString().at(0) === "-"
-          ? "-$" + orderAmount.toString().slice(1)
-          : "+$" + orderAmount.toString()}
-      </div>
+      <Amount amount={orderAmount} />
     </div>
   );
 };

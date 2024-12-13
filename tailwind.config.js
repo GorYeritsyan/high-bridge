@@ -11,6 +11,7 @@ export default {
         "primary-dark": "rgb(52,60,106)",
         "primary-light": "rgba(45,96,255)",
         border: "rgb(230,239,245)",
+        "pagination-color": "rgb(24,20,243)",
       },
 
       content: {

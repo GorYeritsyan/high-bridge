@@ -55,15 +55,16 @@
     @apply flex justify-center items-center;
   }
 
+  /*login background image*/
   .login-background {
     @apply relative z-0 bg-[url('/src/assets/images/bg-img.svg')] bg-cover bg-center;
   }
-
+  /*floating label for login inputs*/
   .floating-label {
     @apply group-focus-within:top-0 group-focus-within:text-[13px] group-focus-within:text-[rgba(66,66,66)] text-[rgb(117,117,117)]  cursor-text font-normal px-[10px] bg-white flex justify-center items-center absolute top-1/2 -translate-y-1/2 left-3 text-base;
   }
 
-  /*active state controller*/
+  /*active state style for login slider controllers  */
   .custom-dots li.slick-active div {
     @apply bg-white w-12 h-[5px];
   }
