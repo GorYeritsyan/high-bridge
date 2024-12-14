@@ -25,9 +25,7 @@ const Input = ({ type, label, field, value, ...props }) => {
         type={isHidden ? type : "text"}
       />
 
-      {/* if password is and his type if password hidden shows outlined eye icon, 
-        else if password is hiddend but also his type is password 
-        show off outlined eye icon, else show nothing */}
+      {/* if input type is password and input text is hidden then shows opened eye icon, else closed eye icon */}
 
       {type === "password" && isHidden ? (
         <IoEyeOutline

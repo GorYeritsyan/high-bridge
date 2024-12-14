@@ -19,6 +19,7 @@ const Statistics = () => {
           outerRadius={135}
           startAngle={40}
           endAngle={400}
+          labelLine={false}
         />
       </PieChart>
     </div>

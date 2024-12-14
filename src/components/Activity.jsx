@@ -52,8 +52,8 @@ const Activity = () => {
     <div className="w-full h-full p-8  pl-0 flex-col flex-center justify-between">
       {/*// label for chart*/}
       <div className="flex justify-end space-x-7 w-full">
-        <BarChartLabel title="Deposit" color="rgb(22,219,204)" />
-        <BarChartLabel title="Withdraw" color="rgb(255,130,172)" />
+        <BarChartLabel title="Deposit" />
+        <BarChartLabel title="Withdraw" />
       </div>
 
       <div className="relative w-full left-3 top-4">
