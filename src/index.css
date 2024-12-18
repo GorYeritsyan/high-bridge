@@ -33,12 +33,13 @@
     @apply font-[zenkaku];
   }
 
+  /*font for login page*/
   @font-face {
     font-family: "zenkaku";
     src: url("./assets/fonts/ZenKakuGothicAntique-Regular.ttf")
       format("truetype");
   }
-
+  /*main font*/
   @font-face {
     font-family: "inter";
     src: url("./assets/fonts/Inter.ttf") format("truetype");

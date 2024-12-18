@@ -6,7 +6,7 @@ const Amount = ({ amount }) => {
     <div
       className={cn(
         "text-base font-medium",
-        // if fetched data amount is negative the color will be red, otherwise green
+        // if purchase amount is negative the color will be red, otherwise green
         amount.toString().at(0) === "-"
           ? "text-[rgba(255,75,74)]"
           : "text-[rgb(65,212,168)]",

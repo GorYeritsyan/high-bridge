@@ -158,6 +158,7 @@ export const navigationList = [
 // image base path
 export const imageBaseUrl = "/src/assets/images";
 
+// Titles for orders table
 export const ordersTableHeader = [
   "Description",
   "Order ID",
@@ -167,6 +168,8 @@ export const ordersTableHeader = [
   "Amount",
   "Action",
 ];
+
+// Titles for products table
 export const productsTableHeader = [
   "Title",
   "Product ID",
