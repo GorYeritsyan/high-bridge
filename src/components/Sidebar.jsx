@@ -1,56 +1,11 @@
 import { NavLink, useLocation } from "react-router-dom";
+// data that will come later
+import { navigationList } from "@/data.js";
 
 export const imageBaseUrl = "/src/assets/images";
 
 const Sidebar = () => {
   const { pathname } = useLocation();
-
-  // data that will come later
-
-  const navigationList = [
-    {
-      image: "/home.svg",
-      "primary-image": "/home-icon.svg",
-      title: "Dashboard",
-      path: "/",
-    },
-    {
-      image: "/orders.svg",
-      "primary-image": "/primary-orders.svg",
-      title: "Orders",
-      path: "/orders",
-    },
-    {
-      image: "/products.svg",
-      "primary-image": "/primary-products.svg",
-      title: "Products",
-      path: "/products",
-    },
-    {
-      image: "/reviews.svg",
-      "primary-image": "",
-      title: "Reviews",
-      path: "/reviews",
-    },
-    {
-      image: "/statistics.svg",
-      "primary-image": "",
-      title: "Statistics",
-      path: "/statistics",
-    },
-    {
-      image: "/currencies.svg",
-      "primary-image": "",
-      title: "Currencies",
-      path: "/currencies",
-    },
-    {
-      image: "/navbar-settings.svg",
-      "primary-image": "/primary-settings.svg",
-      title: "Settings",
-      path: "/setting",
-    },
-  ];
 
   return (
     <nav className="w-[250px] h-full sticky top-0 bg-white border-r border-r-border">

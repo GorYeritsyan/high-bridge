@@ -52,15 +52,15 @@ const Activity = () => {
     <div className="w-full h-full p-8  pl-0 flex-col flex-center justify-between">
       {/*// label for chart*/}
       <div className="flex justify-end space-x-7 w-full">
-        <BarChartLabel title="Deposit" color="rgb(22,219,204)" />
-        <BarChartLabel title="Withdraw" color="rgb(255,130,172)" />
+        <BarChartLabel title="Deposit" />
+        <BarChartLabel title="Withdraw" />
       </div>
 
       <div className="relative w-full left-3 top-4">
         <BarChart width={720} height={226} data={data}>
-            {/*horizontal lines*/}
+          {/*horizontal lines*/}
           <CartesianGrid vertical={false} stroke="rgba(243, 243, 245, 1)" />
-            {/*horizontal coordinates*/}
+          {/*horizontal coordinates*/}
           <XAxis
             dataKey="name"
             axisLine={false}
@@ -71,7 +71,7 @@ const Activity = () => {
               fontWeight: "normal",
             }}
           />
-            {/*vertical coordinates */}
+          {/*vertical coordinates */}
           <YAxis
             tickCount={6}
             axisLine={false}
@@ -82,13 +82,13 @@ const Activity = () => {
               fontWeight: "normal",
             }}
           />
-            {/*tooltip for describing info*/}
+          {/*tooltip for describing info*/}
           <Tooltip
             cursor={{
               fill: "rgb(240, 240, 240)",
             }}
           />
-            {/*bar is showing chart items*/}
+          {/*bar is showing chart items*/}
           <Bar
             barSize={15}
             dataKey="Withdraw"
