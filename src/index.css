@@ -3,45 +3,54 @@
 @tailwind utilities;
 
 @layer base {
-    *{
-        @apply box-border p-0 m-0;
-    }
+  * {
+    @apply box-border p-0 m-0;
+  }
 
-    h1{
-        @apply text-2xl;
-    }
+  h1 {
+    @apply text-2xl;
+  }
 
-    h2{
-        @apply text-xl;
-    }
-    h3{
-        @apply text-lg
-    }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
 
-    h4{
-        @apply text-base;
-    }
-    h5{
-        @apply text-sm;
-    }
+  h4 {
+    @apply text-base;
+  }
+  h5 {
+    @apply text-sm;
+  }
 
-    h6{
-        @apply text-xs
-    }
+  h6 {
+    @apply text-xs;
+  }
 
-    body{
-        @apply font-[zenkaku]
-    }
+  body {
+    @apply font-[zenkaku];
+  }
 
-    @font-face {
-        font-family: 'zenkaku';
-        src: url('./assets/fonts/ZenKakuGothicAntique-Regular.ttf') format('truetype');
-    }
-
+  @font-face {
+    font-family: "zenkaku";
+    src: url("./assets/fonts/ZenKakuGothicAntique-Regular.ttf")
+      format("truetype");
+  }
 }
 
 @layer components {
-    .login-background {
-        @apply relative z-0 bg-login-background-image bg-cover bg-center after:bg-[rgba(33,33,33,0.5)] after:content-[''] after:-z-10 after:w-full after:h-full after:absolute after:top-0;
-    }
+  .login-background {
+    @apply relative z-0 bg-[url('/src/assets/images/bg-img.svg')] bg-cover bg-center;
+  }
+
+  .floating-label {
+    @apply group-focus-within:top-0 group-focus-within:text-[13px] group-focus-within:text-[rgba(66,66,66)] text-[rgb(117,117,117)]  cursor-text font-normal px-[10px] bg-white flex justify-center items-center absolute top-1/2 -translate-y-1/2 left-3 text-base;
+  }
+
+  /*active state controller*/
+  .custom-dots li.slick-active div {
+    @apply bg-white w-12 h-[5px];
+  }
 }
