@@ -5,7 +5,7 @@ import Container from "../components/Container.jsx";
 
 const LoginPage = () => {
   return (
-    <div className="login-background overflow-hidden">
+    <main className="login-background overflow-hidden">
       <div className="w-full h-full bg-gradient-to-tr from-[rgba(33,33,33,0.84)] to-[rgba(66,66,66,0.24)]">
         <Container>
           <div className="flex justify-center items-center space-x-16 h-screen">
@@ -14,7 +14,7 @@ const LoginPage = () => {
           </div>
         </Container>
       </div>
-    </div>
+    </main>
   );
 };
 export default LoginPage;
